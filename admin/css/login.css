@@ -1,0 +1,39 @@
+#admin-app .login{
+	text-align: center;
+	position: relative;
+	top: 200px;
+	width: 420px;	
+	background-color: white;
+	border: #c2c2c2 solid 1px;
+	margin: 0 auto; 
+}
+
+
+#admin-app .login h1{
+	padding-top: 42px ;
+	padding-bottom: 22px;
+	font-weight: 400;
+	font-size: 26px;
+}
+ 
+.login label{
+	margin-left: 10px;
+}
+
+.login input{
+	width: 198px;
+	height: 36px;
+	margin: 10px 0;
+	padding-left: 10px;
+	border: 1px #d2d2d2 solid;
+	outline: none;
+}
+.login input[type="submit"]{
+   width:100px;
+   height: 38px;
+   background-color: #009688;
+   text-align: center;
+} 
+
+
+

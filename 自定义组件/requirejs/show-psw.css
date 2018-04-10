@@ -1,0 +1,23 @@
+ 	.title{
+       font-size: 20px;
+    }
+ 	#psw{
+		height: 20px;
+	 
+	}	 
+	  
+	.img{
+		width:33px;
+		height: 19px;
+		background-image: url('images/hide.png');
+		margin-left: 390px;
+		margin-top: 2px;
+		 
+		 
+		 
+	}
+	
+	.img:hover{
+		background-image: url('images/show.png');  //图片使用base64编码
+	}
+ 

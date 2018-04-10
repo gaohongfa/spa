@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <title></title>
+</head>
+<title>矩形周长面积计算</title>
+<style>
+ .rectangle{
+  text-align: center;
+ }
+ #rectangle__calc{
+   margin-left:53px;
+ }
+ #s1{
+  color: red;
+ }
+ #s2{
+  color: red;
+ }
+ #s3{
+  color: red;
+ }
+ #s4{
+  color: red;
+ }
+
+</style>
+<!-- 要求放到form表单里面 -->
+<!-- 按钮是submit类型 -->
+<body>
+ <div class="rectangle">
+  <form>
+     <label for="">宽度：</label>   
+     <input id="rectangle__width" type="number" autofocus="autofocus" placeholder="请输入大于零的值"  min='0' required step="0.0001" />   
+     <br>
+     
+      
+     <label for="">长度：</label>
+     <input id="rectangle__height" type="number" required placeholder="请输入大于零的值" min='0'  step="0.0001"/>
+     <br>
+    
+    
+     <input id="rectangle__calc" type="submit"  value="计算" prevent default/>
+     
+    </form>
+   
+   <br>
+   <label for="">周长：</label>
+   <input id="rectangle__perimeter" type="textbox" disabled/>
+   <br>
+   <label for="">面积：</label>
+   <input id="rectangle__area" type="textbox" disabled/>
+ </div>  
+</body>
+<script>
+  var width=document.getElementById('rectangle__width');
+  var height=document.getElementById('rectangle__height');
+  var down=document.getElementById('rectangle__calc');
+  var perimter=document.getElementById('rectangle__perimeter');
+  var area=document.getElementById('rectangle__area');
+  
+  	//计算
+	  down.onclick=function(){  
+      if(width.value&&height.value){
+      event.preventDefault();  //
+	    perimter.value=width.value*2+height.value*2;
+      area.value=(width.value*10000*height.value*10000)/100000000; 
+      }
+    }
+	 
+
+</script>
+</html>
